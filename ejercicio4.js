@@ -29,4 +29,14 @@ function findArrayIndex(array, text) {
     }
 }
 
+
+
+function removeArrayIndex(array, text){
+    let position = findArrayIndex(array,text);
+    array.splice(position,1);
+
+    return array;
+}
+
 console.log(findArrayIndex(mainCharacters,"Obi-Wan"));
+console.log(removeArrayIndex(mainCharacters,"Anakin"));
